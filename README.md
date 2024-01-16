@@ -8,7 +8,7 @@ Under Development
 
 In July 2023, the US FAA began publishing National Airspace System Resource (NASR) data in CSV Format with well-defined data types.
 
-In January 2024, we created "FC2S" which is also available soon via PHP Composer, which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
+In January 2024, we created the "FAA CSV to SQL" Project - "FC2S" which is also available soon via PHP Composer, but you can see the early source code [Here](https://github.com/aifrus/fc2s) which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
 
 ## License
 
