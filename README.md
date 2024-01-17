@@ -8,7 +8,7 @@ Under Development
 
 In July 2023, the US FAA began publishing National Airspace System Resource (NASR) data in CSV Format with well-defined data types.
 
-In January 2024, we created the "FAA CSV to SQL" Project - "FC2S" which is also available soon via PHP Composer, but you can see the early source code [Here](https://github.com/aifrus/fc2s) which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
+In January 2024, we created the "FAA CSV to SQL" Project - "FC2S" which will also be available soon via PHP Composer, but you can see the early source code [Here](https://github.com/aifrus/fc2s) which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
 
 Below is a comprehensive bullet list of the tables in the FAA NASR monthly data database, along with a brief description of the data contained within each and the relationships between the tables:
 
@@ -32,12 +32,12 @@ Below is a comprehensive bullet list of the tables in the FAA NASR monthly data 
 - **ATC_SVC**: Services provided by ATC facilities.
 
 ### Airway (AWY)
-- **AWY_ALT**: Minimum enroute altitudes for airways, including associated navigation points.
+- **AWY_ALT**: Minimum en route altitudes for airways, including associated navigation points.
 - **AWY_BASE**: Basic information about airways, including designation and route string.
 - **AWY_SEG**: Segments of airways, including magnetic courses and distances between points.
 
 ### ASOS/AWOS (AWOS)
-- (No specific tables provided in the example, but typically contains information about Automated Surface Observing Systems and Automated Weather Observing Systems at airports.)
+- (No specific tables are provided in the example, but typically contain information about Automated Surface Observing Systems and Automated Weather Observing Systems at airports.)
 
 ### Class Airspace (CLS_ARSP)
 - **CLS_ARSP**: Details about different classes of airspace, including hours of operation and remarks.
@@ -83,7 +83,7 @@ Below is a comprehensive bullet list of the tables in the FAA NASR monthly data 
 - **MIL_OPS**: Information about military operations, including type and hours of operation.
 
 ### Military Training Routes (MTR)
-- (No specific tables provided in the example, but typically contains information about designated routes for military training.)
+- (No specific tables are provided in the example, but typically contain information about designated routes for military training.)
 
 ### Miscellaneous Activity Area (MAA)
 - **MAA_BASE**: Basic information about miscellaneous activity areas, including location and use.
