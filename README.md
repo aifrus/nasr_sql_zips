@@ -7,8 +7,9 @@ Under Development
 ## Synopsis
 
 In July 2023, the US FAA began publishing National Airspace System Resource (NASR) data in CSV Format with well-defined data types.
+- https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/
 
-In January 2024, we created the "FAA CSV to SQL" Project - "FC2S" which will also be available soon via PHP Composer, but you can see the early source code [Here](https://github.com/aifrus/fc2s) which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
+In January 2024, we created the "FAA CSV to SQL" Project - "FC2S" which will also be available soon via PHP Composer, but you can see the early source code at https://github.com/aifrus/fc2s which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
 
 Below is a comprehensive bullet list of the tables in the FAA NASR monthly data database, along with a brief description of the data contained within each and the relationships between the tables:
 
@@ -124,7 +125,7 @@ Designated areas for parachute jumping activities, including location and usage 
 - **PJA_CON**: Contact information for managing facilities of PJAs.
 
 ### Preferred Route / Tower Enroute Control (TEC) Routes (PFR)
-Preferred routes for flights, including tower enroute control routes that provide a structured flow of traffic.
+Preferred routes for flights, including tower en route control routes that provide a structured flow of traffic.
 - **PFR_BASE**: Basic information about preferred routes and TEC routes, including origin and destination.
 - **PFR_SEG**: Segments of preferred routes and TEC routes.
 
@@ -158,6 +159,15 @@ To access and use the data in this database, developers should:
 ## Data Integrity and Updates
 
 The data in this database is subject to change due to updates in airspace structure, facility status, and other operational considerations. It is crucial to regularly update the database to ensure that the information is current and accurate.
+
+The FAA Publishes these updates on a 28-day cycle, with a preview database becoming available 14 days before each point.  The preview data is subject to change until it becomes current.
+
+As long as our system is online you can retrieve the current databases at:
+- https://github.com/aifrus/nasr_sql_zips/NASR_CURRENT.sql.zip
+- https://github.com/aifrus/nasr_sql_zips/NASR_PREVIEW.sql.zip
+
+If for some reason our service goes offline or if you just wish to import the data from FAA CSV to SQL yourself, you can check out our project at
+- https://github.com/aifrus/fc2s
 
 ### Relationships Between Tables
 - Many tables are related by common fields such as `SITE_NO`, `ARPT_ID`, `NAV_ID`, `STATE_CODE`, `COUNTRY_CODE`, and `ICAO_REGION_CODE`.
