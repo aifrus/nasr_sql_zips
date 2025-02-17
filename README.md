@@ -163,9 +163,8 @@ The data in this database is subject to change due to updates in airspace struct
 The FAA Publishes these updates on a 28-day cycle, with a preview database becoming available 14 days before each point.  The preview data is subject to change until it becomes current.
 
 As long as our system is online you can retrieve the current databases at:
-- https://github.com/aifrus/nasr_sql_zips/NASR_CURRENT.sql.zip
-- https://github.com/aifrus/nasr_sql_zips/NASR_PREVIEW.sql.zip
-
+- https://github.com/aifrus/nasr_sql_zips/archive/
+- 
 If for some reason our service goes offline or if you just wish to import the data from FAA CSV to SQL yourself, you can check out our project at
 - https://github.com/aifrus/fc2s
 
