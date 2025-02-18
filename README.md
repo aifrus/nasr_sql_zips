@@ -11,6 +11,8 @@ In July 2023, the US FAA began publishing National Airspace System Resource (NAS
 
 In January 2024, we created the "FAA CSV to SQL" Project - "FC2S" which will also be available soon via PHP Composer, but you can see the early source code at https://github.com/aifrus/fc2s which imports this data when released and exports the .sql file, zips it, and pushes it to this repository.
 
+In February 2025, the project was overhauled and finally published to Composer.
+
 Below is a comprehensive bullet list of the tables in the FAA NASR monthly data database, along with a brief description of the data contained within each and the relationships between the tables:
 
 # Developer Documentation for Aeronautical Database
